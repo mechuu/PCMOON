@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="media/pinterest/bow.png">
+    <title>𝑚𝑎𝑟𝑦'𝑠 macbook</title>
+    <style>
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),
+         url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),
+         url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),
+         url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),
+         url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),
+         url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 900;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),
+         url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff');
+}
+
+        .menui-left h6, .menui-left p, .menui-right p, #clock{
+            margin: 0 15px;
+            color: grey;
+            font-family: system-ui;
+            font-size: 12px;
+        }
+
+        .miniplayer {
+            width: 25%;
+            max-width: 500px;
+            height: 60px;
+            margin-left: 70%;
+            background-color: #F2F3F4;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #636364d5;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            position: relative;
+            
+        }
+
+        .miniplayer .controls-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .miniplayer h6 {
+            margin: 0;
+            color: #000;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .app a, .app img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            margin: 0 5px;
+        }
+    </style>
+    
+</head>
+<body style="background-color: #ecf2ff;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 80vh;
+margin: 3%;
+min-width: 960px">
+
+    <div style="min-width: 960px;  
+    height: 540px;
+    background-image: url('media/pinterest/background.jpeg');
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #b2c8fc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    position: relative">
+
+        <div style="width: 100%;
+        height: 20px;
+        background-color: #c1c3cc52;
+        box-shadow: 0 0 10px #93959c79;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        border-radius: 20px 20px 0 0;
+        padding: 0 20px;
+        box-sizing: border-box">
+
+            <div class="menui-left" style="display: flex; align-items: center">
+                <img src="ui/apple.png" style="width: 20px">
+                <h6 style="font-size: .713em">File</h6>
+                <p>Edit</p>
+                <p>View</p>
+                <p>Go</p>
+                <p>Window</p>
+                <p>Help</p>
+            </div>
+
+            <div style="display: flex; align-items: center">
+                <img src="ui/search.png" style="width: 10px;
+                margin: 0 6px;
+                color: grey">
+                <img src="ui/battery.png" style="width: 10px;
+                margin: 0 6px;
+                color: grey">
+                <img src="ui/wifi.png" style="width: 10px;
+                margin: 0 6px;
+                color: grey">
+
+                <div style="color: grey;
+                font-family: system-ui;
+                font-size: 12px"
+                id="date">date</div>
+
+                <div style="color: grey; 
+                font-family: system-ui;
+                font-size: 12px"id="clock">0000</div>
+            </div>
+            </div>
+
+            <div style="margin-left: 70%">
+                <img src="media/pinterest/shoujo.jpg" style="height: 100px; 
+                width: 100px; 
+                border-radius: 10px">
+                
+                <img src="media/pinterest/seasons.jpg" style="padding-left:12px ;
+                height: 100px; 
+                width: 100px; 
+                border-radius: 10px">
+            </div>
+
+
+            <div class="miniplayer" style="margin-bottom: 28%">
+                <img src="media/spotify/anighttoremember.jpg" style="height: 57px;
+                padding-left: 1px;
+                width: auto;
+                border-radius: 10px 0 0 10px">
+    
+                <div style="display: flex;
+                flex-direction: column;
+                width: 100%">
+    
+                    <h6 style="color: grey;font-size: 0.75em;
+                    line-height: 1">
+                    a night to remember</h6>
+                    <h6 style="color: #c5c4c4; font-size: 0.5em;
+                    line-height: 2">
+                    laufey • beabadoobee  —  a night to remem</h6>
+                    <audio controls src="media/spotify/antr.mp3" preload="metadata" style="width: 100%; 
+                    height: 15px"></audio>
+                </div>
+            </div>
+        
+        <div style="font-family: 'Netflix Sans', sans-serif;
+        width: 100%;
+        max-width: 700px;
+        height: 400px;
+        background-color: #000;
+        border-radius: 20px;
+        box-shadow: 0 0 10px #252525a6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 55px;
+        left: 43%;
+        transform: translateX(-50%);
+        z-index: 3">
+
+        <div class="menui-left" style="position: absolute;
+        top: 10px;
+        left: 3%;
+        z-index: 5;">
+
+            <div style="display: flex; 
+            align-items: center;
+            margin-left: -10px;
+            margin-top: -8px;">
+
+                <a href="♡petals.html">
+                <img src="ui/red.png" style="width: 10px;
+                height: 10px;
+                margin-right: 6px;"></a>
+
+
+                <img src="ui/yellow.png" style="width: 10px;
+                height: 10px;
+                margin-top: 2px;
+                margin-right: 6px">
+                
+                <img src="ui/green.png" style="width: 10px; 
+                height: 10px;
+                margin-top: 2px;">
+            </div>
+        </div>
+
+            <video width="700px" height="400" controls autoplay style="border-radius: 20px">
+                <source src="media/netflix/suits.mp4" type="video/mp4">
+            </video>
+            
+        </div> 
+        
+        
+        <div class="taskbar" style="z-index: 5; 
+        width: 100%;
+        max-width: 500px;
+        height: 50px;
+        background-color: #c1c3cc8a;
+        border-radius: 15px;
+        box-shadow: 0 0 10px #93959c79;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        padding: 0 10px;
+        box-sizing: border-box">
+
+            <div class="app" style="display: flex;
+            justify-content: space-around;
+            align-items:
+            center; width: 100%">
+
+            
+            <a href="photos.html">
+                <img src="ui/photos.png"></a>
+            <img src="ui/notion.png">
+            <img src="ui/notioncal.png">
+            <a href="pinterest.html">
+                <img src="ui/pinterest.webp"></a>
+            <a href="spotify.html">
+                <img src="ui/spotify.webp"></a>
+                <img src="ui/chrome.png">
+            <a href="netflix.html">
+                <img src="ui/netflix.png"></a>
+            <a href="xbox.html">
+                <img src="ui/xbox1.png"></a>
+            <img src="ui/settings.webp">
+            </div>
+        </div>  
+    </div>
+
+    <script>
+
+        function updateDate() {
+            const now = new Date();
+            const options = { weekday: 'short', month: 'short', day: 'numeric' };
+            const dateString = now.toLocaleDateString('en-US', options);
+            document.getElementById('date').textContent = dateString;
+        }
+        updateDate();
+
+        function updateTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const timeString = `${hours}:${minutes}`;
+            document.getElementById('clock').textContent = timeString;
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+    
+</body>
+</html>

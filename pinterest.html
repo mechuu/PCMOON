@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="media/pinterest/bow.png">
+    <title>𝑚𝑎𝑟𝑦'𝑠 macbook</title>
+    <style>
+
+        .menui-left h6, .menui-left p, .menui-right p, #clock{
+            margin: 0 15px;
+            color: grey;
+            font-family: system-ui;
+            font-size: 12px;
+        }
+
+        .miniplayer {
+            width: 25%;
+            height: 60px;
+            margin-left: 70%;
+            background-color: #F2F3F4;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #636364d5;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .miniplayer h6 {
+            margin: 0;
+            color: #000;
+            font-family: system-ui;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .app a, .app img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            margin: 0 5px;
+        }
+
+        .pinterest {
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            box-shadow: 0 0 10px #252525a6;
+            box-sizing: border-box;
+            position: absolute;
+            top: 55px;
+            left: 43%;
+            transform: translateX(-50%);
+            z-index: 3;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        .pinterest img {
+            max-width: 100%;
+            height: 100px; 
+            margin-bottom: 6px;
+            border-radius: 5px;
+        }
+    </style>
+    
+</head>
+
+<body style="background-color: #ecf2ff;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 80vh;
+margin: 3%;
+min-width: 960px">
+
+    <div style="min-width: 960px;  
+    height: 540px;
+    background-image: url('media/pinterest/background.jpeg');
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #b2c8fc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    position: relative">
+
+        <div style="width: 100%;
+        height: 20px;
+        background-color: #c1c3cc52;
+        box-shadow: 0 0 10px #93959c79;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        border-radius: 20px 20px 0 0;
+        padding: 0 20px;
+        box-sizing: border-box">
+
+            <div class="menui-left" style="display:flex; align-items: center">
+                <img src="ui/apple.png" style="width: 20px">
+                <h6 style="font-size: .713em">File</h6>
+                <p>Edit</p>
+                <p>View</p>
+                <p>Go</p>
+                <p>Window</p>
+                <p>Help</p>
+            </div>
+
+            <div style="display: flex; align-items: center">
+                <img src="ui/search.png" style="width: 10px;
+                margin: 0 6px;
+                color: grey">
+                <img src="ui/battery.png" style="width: 10px;
+                margin: 0 6px;
+                color: grey">
+                <img src="ui/wifi.png" style="width: 10px;
+                margin: 0 6px;
+                color: grey">
+
+                <div style="color: grey;
+                font-family: system-ui;
+                font-size: 12px"
+                id="date">date</div>
+
+                <div style="color: grey; 
+                font-family: system-ui;
+                font-size: 12px"id="clock">0000</div>
+            </div>
+        </div>
+
+        <div style="margin-left: 70%; 
+        z-index: 1">
+
+    <img src="media/pinterest/f201f1f8501bf020e3e126de1513b595.jpg" style="height: 100px;
+    width: 100px;
+    border-radius: 10px">
+
+    <img src="media/pinterest/seasons.jpg" style="padding-left: 12px;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px">
+        </div>
+
+
+        <div class="miniplayer" style="margin-bottom: 28%">
+            <img src="media/spotify/anighttoremember.jpg" style="height: 57px;
+            padding-left: 1px;
+            width: auto;
+            border-radius: 10px 0 0 10px">
+
+            <div style="display: flex;
+            flex-direction: column;
+            width: 100%">
+
+                <h6 style="color: grey;font-size: 0.75em;
+                line-height: 1">
+                a night to remember</h6>
+                <h6 style="color: #c5c4c4; font-size: 0.5em;
+                line-height: 2">
+                laufey • beabadoobee  —  a night to remem</h6>
+                <audio controls src="media/spotify/antr.mp3" preload="metadata" style="width: 100%; 
+                height: 15px"></audio>
+            </div>
+        </div>
+        
+        <div class="pinterest">
+    <div class="menui-left" style="position: absolute;
+    top: 50px;
+    left: 10px;
+    z-index: 5">
+
+        <div class="row">
+            <div class="column">
+                <img src="media/pinterest/84c5cf1eda75cc7a56a337cbb95c5323.jpg">
+                <img src="media/pinterest/416d3cb571ba9bb0339450c702ba2da1.jpg">
+                <img src="media/pinterest/c5e11ecbfc935826ee03b7f77d238e3d.jpg">
+                <img src="media/pinterest/a1a71aaeec29318e10b01ea25425663b.jpg">
+                <img src="media/pinterest/c35c69352eea8447711065b0304a7eac.jpg">
+                <img src="media/pinterest/d0edfa479349d90ebd0993750cd8e037.jpg">
+                <img src="media/pinterest/8101a8570be77605396868c67ead45b1.jpg">
+            </div>
+            <div class="column">
+                <img src="media/pinterest/c5e5ca4e1c1e6a4f037ef2ee4d17471e.jpg">
+                <img src="media/pinterest/9462181e7e12f8f0981113b06ec3e944.jpg">
+                <img src="media/pinterest/81dadf57e7883088c957824257c739b7.jpg">
+                <img src="media/pinterest/2c33aded2a6c408584999d4c8fc4f241.jpg">
+                <img src="media/pinterest/bf8b300cca5cc54ef6d55ce7b3f74c85.jpg">
+                <img src="media/pinterest/8e7c812d3ea316d8902f75f83008113a.jpg">
+            </div>
+            <div class="column">
+                <img src="media/pinterest/526d46ede4341f06d2d40094dee3d937.jpg">
+                <img src="media/pinterest/c42bf278cf19fd87c28d05e4e8fd4aea.jpg">
+                <img src="media/pinterest/4625c531a46e028b12f9ae04fd47fdb0.jpg">
+                <img src="media/pinterest/796a4289e2544e586eb3a850aea14778.jpg">
+                <img src="media/pinterest/87292221e3a72612d0888672c4f592c6.jpg">
+                <img src="media/pinterest/3cc41a7bcbc220599adbb0739054dc72.jpg">
+                <img src="media/pinterest/fcf6ee5362387636732dae8d9f7a6f4e.jpg">
+            </div>
+            <div class="column">
+                <img src="media/pinterest/509586852caa2baa97e48d0c764e4a41.jpg">
+                <img src="media/pinterest/db7ecb765bedfbe69857d2eb181a19da.jpg">
+                <img src="media/pinterest/b635e85b9d38b1f5877b2d959381923b.jpg">
+                <img src="media/pinterest/76373d2af147db821c41cd32383eddad.jpg">
+                <img src="media/pinterest/003ac3356666f2eb0b3ec17e3b2684fd.jpg">
+                <img src="media/pinterest/2610287b5e97708bed196a6cea82ca6b.jpg">
+                <img src="media/pinterest/c9b043fbfd29b8a5f12fe9484f6c0af0.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="media/pinterest/4a12c5aa4afa32589fa69373184739b4.jpg">
+                <img src="media/pinterest/8d67d0f1f0ba4420068cce865bc2013c.jpg">
+                <img src="media/pinterest/6177769370b5c97593ce32064f6089da.jpg">
+                <img src="media/pinterest/2d08e78fc51c5957a0f6a981a807d5bb.jpg">
+                <img src="media/pinterest/d443564fadddd9fd7561be11e006cdc8.jpg">
+                <img src="media/pinterest/dee9cf90e7138b2102e4633b4d1dbe28.jpg">
+                <img src="media/pinterest/5aa3367b262d0fbd4927aca129542a4d.jpg">
+            </div>
+            <div class="column">
+                <img src="media/pinterest/9d3b295e5f13edd776b15483b3932619.jpg">
+                <img src="media/pinterest/b72d423c734dad810ffd7e3868c6c736.jpg">
+                <img src="media/pinterest/37315dbeb27dc9fcb9d2ed3fabb89fbd.jpg">
+                <img src="media/pinterest/d15ba961b4e2bb5c1454bd72ee818a37.jpg">
+                <img src="media/pinterest/dbe8389628d5d3ad79fdf302633a5b07.jpg">
+                <img src="media/pinterest/79577d9fca46ad1413559899c3007c8f.jpg">
+                <img src="media/pinterest/e4084a5484339696a9d21e3df2147edc.jpg">
+            </div>
+            <div class="column">
+                <img src="media/pinterest/f35880c1c7c0113a0f984d41ff074cb7.jpg">
+                <img src="media/pinterest/3b186ebe4868ad81f058ad7d9b743db7.jpg">
+                <img src="media/pinterest/02103f5f01ca04735e46787863dffd27.jpg">
+                <img src="media/pinterest/2edbdbe69778072d97564e8138f1fa2c.jpg">
+                <img src="media/pinterest/c374215a7495761d34a10f711bce6f6e.jpg">
+                <img src="media/pinterest/116d7e8ad1a54553b2107470f5b0526b.jpg">
+                <img src="media/pinterest/73bd72052fdaef83a0bdbd383c158ed5.jpg">
+            </div>
+        </div>    
+        </div>
+        
+</div>        
+<div style="display: flex; 
+align-items: center;
+margin-left: 2px;
+position: absolute;
+z-index: 10;
+top: 55px">
+    
+    <img src="media/pinterest/pinterestbar.png" style="width: 760px;
+    top: -2.5px;
+    height: 50px;
+    scale: .90;
+    left: -75px;
+    position: relative;
+    border-radius: 17px 17px 0 0">
+    
+</div>
+<div style="position: fixed; z-index: 11; margin-top: 60px;"><a href="♡petals.html">
+    <img src="ui/red.png" style="width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    margin-left:-405px"></a>
+
+    <img src="ui/yellow.png" style="width: 10px;
+    height: 10px;
+    margin-right: 5px">
+    
+    <img src="ui/green.png" style="width: 10px; 
+    height: 10px"></div>
+        <div style="max-width: 500px;
+        height: 50px;
+        background-color: #c1c3cc8a;
+        border-radius: 15px;
+        box-shadow: 0 0 10px #93959c79;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        padding: 0 10px;
+        box-sizing: border-box">
+
+            <div class="app" style="display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%">
+
+            <a href="photos.html">
+                <img src="ui/photos.png"></a>
+            <img src="ui/notion.png">
+            <img src="ui/notioncal.png">
+            <a href="pinterest.html">
+                <img src="ui/pinterest.webp"></a>
+            <a href="spotify.html">
+                <img src="ui/spotify.webp"></a>
+                <img src="ui/chrome.png">
+            <a href="netflix.html">
+                <img src="ui/netflix.png"></a>
+            <a href="xbox.html">
+                <img src="ui/xbox1.png"></a>
+            <img src="ui/settings.webp">
+            </div>
+        </div>
+        
+    </div>
+    <script>
+
+        function updateDate() {
+            const now = new Date();
+            const options = { weekday: 'short', month: 'short', day: 'numeric' };
+            const dateString = now.toLocaleDateString('en-US', options);
+            document.getElementById('date').textContent = dateString;
+        }
+        updateDate();
+
+        function updateTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const timeString = `${hours}:${minutes}`;
+            document.getElementById('clock').textContent = timeString;
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body>
+</html>

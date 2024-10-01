@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="media/pinterest/bow.png">
+    <title>𝑚𝑎𝑟𝑦'𝑠 macbook</title>
+    <style>
+
+        .menui-left h6, .menui-left p, .menui-right p, #clock{
+            margin: 0 15px;
+            color: grey;
+            font-family: system-ui;
+            font-size: 12px;
+        }
+
+        .miniplayer {
+            width: 25%;
+            height: 60px;
+            margin-left: 70%;
+            background-color: #F2F3F4;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #636364d5;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .miniplayer h6 {
+            margin: 0;
+            color: #000;
+            font-family: system-ui;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .app a, .app img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            margin: 0 5px;
+        }
+
+        .spotify {
+            font-family: 'Netflix Sans', sans-serif;
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            background-color: #000;
+            border-radius: 20px;
+            box-shadow: 0 0 10px #252525a6;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 10px;
+            box-sizing: border-box;
+            position: absolute;
+            top: 55px;
+            left: 43%;
+            transform: translateX(-50%);
+            z-index: 3;
+        }
+
+        .spotify h6 {
+            font-family: Arial, sans-serif;
+            font-weight: 550;
+
+        }
+        
+        .menui-left h6, .menui-left p, .menui-right p, #clock{
+            margin: 0 15px;
+            color: grey;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 12px;
+        }
+
+        .menui-right img {
+            margin: 0 6px;
+            color: grey;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 12px;  
+        }
+
+.photo-item {
+    width: calc(25% - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000d5;
+    
+}
+
+.photo-item h6 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 11px;
+    margin-left: 5px;
+    font-weight: 530;
+    color: #FFFFFF;
+}
+
+
+.photo-item:hover {
+    transform: scale(1.1);
+    background-color: #504f4f80;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+    height: 150px;
+    bottom: 10px;
+}
+
+        
+    </style>
+    
+</head>
+<body style="background-color: #ecf2ff;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 80vh;
+margin: 3%">
+
+    <div style="min-width: 960px;  
+    height: 540px;
+    background-color: #FFFFFF;
+    background-image: url('media/pinterest/background.jpeg');
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #b2c8fc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    position: relative">
+
+        <div style="width: 100%;
+        height: 20px;
+        background-color: #c1c3cc52;
+        box-shadow: 0 0 10px #93959c79;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        border-radius: 20px 20px 0 0;
+        padding: 0 20px;
+        box-sizing: border-box">
+
+            <div class="menui-left" style="display: flex; align-items: center">
+                <img src="ui/apple.png" style="width: 20px">
+                <h6 style="font-size: .713em">File</h6>
+                <p>Edit</p>
+                <p>View</p>
+                <p>Go</p>
+                <p>Window</p>
+                <p>Help</p>
+            </div>
+
+            <div style="display: flex; align-items: center">
+                <img src="ui/search.png" style="width: 10px;
+                margin: 0 6px;
+                color: grey">
+                <img src="ui/battery.png" style="width: 10px;
+                margin: 0 6px;
+                color: grey">
+                <img src="ui/wifi.png" style="width: 10px;
+                margin: 0 6px;
+                color: grey">
+
+                <div style="color: grey;
+                font-family: system-ui;
+                font-size: 12px"
+                id="date">date</div>
+
+                <div style="color: grey; 
+                font-family: system-ui;
+                font-size: 12px"id="clock">0000</div>
+            </div>
+        </div>
+
+        <div style="margin-left: 70%">
+            <img src="media/pinterest/f201f1f8501bf020e3e126de1513b595.jpg" style="height: 100px; 
+            width: 100px; 
+            border-radius: 10px">
+            
+            <img src="media/pinterest/seasons.jpg" style="padding-left:12px ;
+            height: 100px; 
+            width: 100px; 
+            border-radius: 10px">
+        </div>
+
+        <div class="miniplayer" style="margin-bottom: 28%">
+            <img src="media/spotify/anighttoremember.jpg" style="height: 57px;
+            padding-left: 1px;
+            width: auto;
+            border-radius: 10px 0 0 10px">
+
+            <div style="display: flex;
+            flex-direction: column;
+            width: 100%">
+
+                <h6 style="color: grey;font-size: 0.75em;
+                line-height: 1">
+                a night to remember</h6>
+                <h6 style="color: #c5c4c4; font-size: 0.5em;
+                line-height: 2">
+                laufey • beabadoobee  —  a night to remem</h6>
+                <audio controls src="media/spotify/antr.mp3" preload="metadata" style="width: 100%; 
+                height: 15px"></audio>
+            </div>
+        </div>
+        
+        <div class="spotify">
+            <div class="menui-left" style="position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 5">
+
+        <div style="display: flex; 
+        align-items: center;
+        margin-top: -8px">
+
+            <a href="♡petals.html">
+            <img src="ui/red.png" style="width: 10px;
+            height: 10px;
+            margin-right: 5px"></a>
+
+            <img src="ui/yellow.png" style="width: 10px;
+            height: 10px;
+            margin-right: 5px">
+            
+            <img src="ui/green.png" style="width: 10px; 
+            height: 10px">
+        </div>
+            </div>
+            
+            <div style="width: 20%;
+              height: 100%;
+              background-color: #121212;
+              border-radius: 20px 0 0 20px;
+              position: absolute;
+              left: 0;
+              top: 0">
+
+              
+                <div style="flex-direction: row;"></div>
+                <div style="flex-direction: column;">
+                <div style="background-color: #33333380;
+                border-radius: 10px;
+                margin: 5px;
+                height: 140px;
+                padding-left: 6px;
+                line-height: 8px;
+                margin-top: 15%">
+
+                    <div style="padding-top: 10%; text-align: left;">
+                        <img src="ui/home.png" style="width: 14px;
+                        height: auto;
+                        padding-top: 2%;
+                        position: absolute;
+                        margin-left: 6px;
+                        margin-right: 5px">
+    
+                        <h6 style="margin: 0;
+                        z-index: 1;
+                        font-size: .613em;
+                        color: #B3B3B3;
+                        margin-top: 6px;
+                        padding-left: 30px;">
+                        Home</h6></div>
+
+                        <div style="padding-top: 10%; text-align: left;">
+                            <img src="ui/search.png" style="width: 16px;
+                            height: auto;
+                            padding-top: 2%;
+                            position: absolute;
+                            margin-left: 6px;
+                            margin-right: 5px">
+        
+                            <h6 style="margin: 0;
+                            z-index: 1;
+                            font-size: .613em;
+                            margin-top: 6px;
+                            color: #B3B3B3;
+                            padding-left: 30px;">
+                            Search</h6></div>
+
+                            <div style="padding-top: 10%; text-align: left;"><a href="spotify.html">
+                                <img src="ui/library.png" style="width: 18px;
+                                height: auto;
+                                margin-left: 6px;
+                                position: absolute;
+                                margin-right: 5px"></a>
+            
+                                <h6 style="margin: 0;
+                                z-index: 1;
+                                font-size: .613em;
+                                margin-top: 6px;
+                                color: #FFFFFF;
+                                padding-left: 30px;">
+                                Your Library</h6></div>
+
+                                <div style="padding-top: 10%; text-align: left;">
+                                    <img src="ui\spotify grey\Lyrics.png" style="width: 16px;
+                                    height: auto;
+                                    padding-top: 2%;
+                                    margin-left: 6px;
+                                    position: absolute;
+                                    margin-right: 5px">
+                
+                                    <h6 style="margin: 0;
+                                    z-index: 1;
+                                    font-size: .613em;
+                                    color: #B3B3B3;
+                                    margin-top: 6px;
+                                    padding-left: 30px;">
+                                    Lyrics</h6></div>
+                </div>
+
+                <div style="background-color: #33333380;
+                border-radius: 10px;
+                margin: 5px;
+                padding-left: 6px;
+                height: 182px;
+                margin-top: 4%;">
+                
+                <div style="padding-top: 10%; text-align: left;">
+                    <img src="media/pinterest/02103f5f01ca04735e46787863dffd27.jpg" style="width: 30px;
+                    height: auto;
+                    position: absolute;
+                    border-radius: 5px;
+                    margin-left: 2px;
+                    margin-right: 5px">
+
+                    <h6 style="margin: 0;
+                    z-index: 1;
+                    font-size: .513em;
+                    color: #FFFFFF;
+                    margin-top: 6px;
+                    padding-left: 40px;">
+                    𝑚𝑎𝑔𝑛𝑜'𝒍𝒊𝒂</h6></div>
+
+                <div style="padding-top: 15%; text-align: left;">
+                    <img src="media/pinterest/shoujo.jpg" style="width: 30px;
+                    height: auto;
+                    position: absolute;
+                    border-radius: 5px;
+                    margin-left: 2px;
+                    margin-right: 5px">
+
+                    <h6 style="margin: 0;
+                    z-index: 1;
+                    font-size: .513em;
+                    color: #FFFFFF;
+                    margin-top: 6px;
+                    
+                    padding-left: 40px;">
+                    01.</h6></div>
+
+                <div style="padding-top: 15%; text-align: left;">
+                    <img src="media/spotify/shoujo.jpg" style="width: 30px;
+                    height: auto;
+                    position: absolute;
+                    border-radius: 5px;
+                    margin-left: 2px;
+                    margin-right: 5px">
+
+                    <h6 style="margin: 0;
+                    z-index: 1;
+                    font-size: .513em;
+                    color: #FFFFFF;
+                    margin-top: 6px;
+                    padding-left: 40px;">
+                    shoujo ୨୧</h6></div>
+                <div style="padding-top: 15%; text-align: left;">
+                    <img src="media/spotify/744928808000af481fd9798ee652343b.jpg" style="width: 30px;
+                    height: auto;
+                    position: absolute;
+                    border-radius: 5px;
+                    margin-left: 2px;
+                    margin-right: 5px">
+
+                    <h6 style="margin: 0;
+                    z-index: 1;
+                    font-size: .513em;
+                    color: #FFFFFF;
+                    margin-top: 6px;
+                    padding-left: 40px;">
+                    reading</h6></div>
+
+                    <div style="padding-top: 15%; text-align: left;">
+                        <img src="media/spotify/1e11e8f22cd71bd3e487cc23f0d811b4.jpg" style="width: 30px;
+                        height: auto;
+                        position: absolute;
+                        border-radius: 5px;
+                        margin-left: 2px;
+                        margin-right: 5px">
+    
+                        <h6 style="margin: 0;
+                        z-index: 1;
+                        font-size: .513em;
+                        color: #FFFFFF;
+                        margin-top: 6px;
+                        padding-left: 40px;">
+                        cas</h6></div>
+                
+            </div>
+                <div style="width: 600px;
+                height: 352px;
+                width: 560px;
+                background-color: #121212;
+                position: absolute;
+                border-radius: 0 20px 0 0;
+                left: 140px;
+                top: 0;">
+                </div>
+
+                <div style="width: 600px;
+                height: 330px;
+                width: 550px;
+                background-color: #33333380;
+                border-radius: 10px;
+                position: absolute;
+                left: 140px; 
+                top: 20px;">
+
+                <div style="width: 20%;
+                width: 100%;
+                background-color: transparent;
+                position: relative;
+                height:8px;
+                bottom:0;">
+
+                <div style="margin-left: 2%; ">
+                    <img src="ui/arrowleft.png" style="
+                    width: 18px;
+                    height: auto;
+                    margin-top: 5px;
+                    position: absolute;
+                    border-radius: 10px;
+                    background: radial-gradient(circle, 
+                                white 15%, 
+                                black 100%);
+                    margin-right: 5px;">
+
+    
+                    <img src="ui/arrowright.png" style="width: 18px;
+                    height: auto;
+                    margin-top: 5px;
+                    margin-left: 25px;
+                    border-radius: 10px;
+                    position: absolute;
+                    background: radial-gradient(circle, 
+                                white 15%, 
+                                black 100%);
+                    margin-right: 5px;">
+
+                    <h6 style="
+                    margin-top: 8px;
+                    margin-left: 60px;
+                    border-radius: 10px;
+                    position: absolute;
+                    margin-right: 5px;
+                    font-size: 14px;
+                    color: #FFFFFF;">
+                    Playlists</h6>
+                    
+                    <img src="ui/notification.png" style="width: 20px;
+                    height: auto;
+                    margin-top: 5px;
+                    background-color: #000;
+                    border-radius: 10px;
+                    margin-left: 85%;
+                    position: absolute;
+                    margin-right: 5px">
+
+                    <img src="media/pinterest/shuyi.jpg" style="width: 18px;
+                    height: auto;
+                    margin-top: 5px;
+                    border-radius: 10px;
+                    margin-left: 90%;
+                    position: absolute;
+                    margin-right: 5px"></a></div>
+                </div>
+
+                <div style="    padding: 4%;">
+                    <div style="display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 10px;
+                    max-width: 100%; 
+                    margin: 0 auto;">
+                        <div class="photo-item">
+                            <a href="01.html">
+                            <img src="media/pinterest/shoujo.jpg"></a>
+                            <h6>01.</h6>
+                        </div>
+                        <div class="photo-item">
+                            <img src="media/spotify/shoujo.jpg">
+                            <h6>shoujo ୨୧</h6>
+                        </div>
+                        <div class="photo-item">
+                            <img src="media/pinterest/02103f5f01ca04735e46787863dffd27.jpg">
+                            <h6>𝑚𝑎𝑔𝑛𝑜'𝒍𝒊𝒂</h6>
+                        </div>
+                        <div class="photo-item">
+                            <img src="media/spotify/IMG_27541.JPG">
+                            <h6>coding</h6>
+                        </div>
+                        <div class="photo-item">
+                            <img src="media/spotify/744928808000af481fd9798ee652343b.jpg">
+                            <h6>reading</h6>
+                        </div>
+                        <div class="photo-item">
+                            <img src="media/spotify/IMG_2350_Original.jpg">
+                            <h6>nwà ọ́nwà</h6>
+                        </div>
+                        <div class="photo-item">
+                            <img src="media/spotify/1e11e8f22cd71bd3e487cc23f0d811b4.jpg">
+                            <h6>cas</h6>
+                        </div>
+                        <div class="photo-item">
+                            <img src="media/spotify/13e198b5bb252617b951524482f8e935.jpg">
+                            <h6>study instrumentals</h6>
+                        </div>
+                    </div>
+                </div>                
+                </div>
+            </div>
+        </div>
+            
+        
+            <div style="width: 20%;
+              height: 12%;
+              width: 100%;
+              background-color: #000;
+              border-radius: 0 0 20px 20px;
+              position: absolute;
+<<<<<<< Updated upstream
+              bottom: 0;"></div>
+
+=======
+              bottom: 0"></div>
+>>>>>>> Stashed changes
+            </div>
+
+        <div style="max-width: 500px;
+        height: 50px;
+        background-color: #c1c3cc8a;
+        border-radius: 15px;
+        box-shadow: 0 0 10px #93959c79;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        padding: 0 10px;
+        box-sizing: border-box">
+
+            <div class="app" style="display: flex;
+            justify-content:space-around;
+            align-items: center;
+            width: 100%">
+            
+                <a href="photos.html">
+                    <img src="ui/photos.png"></a>
+                <img src="ui/notion.png">
+                <img src="ui/notioncal.png">
+                <a href="pinterest.html">
+                    <img src="ui/pinterest.webp"></a>
+                <a href="spotify.html">
+                    <img src="ui/spotify.webp"></a>
+                    <img src="ui/chrome.png">
+                <a href="netflix.html">
+                    <img src="ui/netflix.png"></a>
+                <a href="xbox.html">
+                    <img src="ui/xbox1.png"></a>
+                <img src="ui/settings.webp">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateDate() {
+            const now = new Date();
+            const options = { weekday: 'short', month: 'short', day: 'numeric' };
+            const dateString = now.toLocaleDateString('en-US', options);
+            document.getElementById('date').textContent = dateString;
+        }
+        updateDate();
+
+        function updateTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const timeString = `${hours}:${minutes}`;
+            document.getElementById('clock').textContent = timeString;
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+    
+</body>
+</html>
