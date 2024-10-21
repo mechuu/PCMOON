@@ -1,7 +1,8 @@
 M. Chukwu
 08.2024
 
-This is a MacBook inspired desktop
+This web app is a MacBook-inspired desktop interface, originally developed from an ungraded class work. 
+I worked extensively on it for four continuous days to bring my vision of my design to the .
 
 
 Steps to view Website
