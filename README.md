@@ -1,8 +1,8 @@
 M. Chukwu
 08.2024
 
-This web app is a MacBook-inspired desktop interface, originally developed from an ungraded class work. 
-I worked extensively on it for four continuous days to bring my vision of my design to the .
+This web app is a MacBook-inspired desktop interface, originally created from an ungraded class work. 
+I worked extensively on it for four continuous days to develop my vision using web application.
 
 
 Steps to view Website
